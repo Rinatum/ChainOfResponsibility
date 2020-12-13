@@ -1,0 +1,5 @@
+name: 'Run pytests in Docker'
+description: 'Test different graders'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

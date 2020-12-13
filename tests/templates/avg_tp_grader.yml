@@ -1,0 +1,7 @@
+- class: AttendanceChecker
+  params:
+    thresh: 2
+
+- class: TpChecker
+  params:
+    thresh: 56

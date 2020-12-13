@@ -1,0 +1,11 @@
+- class: AttendanceChecker
+  params:
+    thresh: 2
+
+- class: TpMaxChecher
+  params:
+    thresh: 56
+
+- class: CheatingChecker
+  params:
+    thresh: 2

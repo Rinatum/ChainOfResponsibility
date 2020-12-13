@@ -1,0 +1,52 @@
+- name: Yarick
+  mail: y.heh@inno.ru
+
+  tp:
+    - grade: 80
+    - grade: 70
+    - grade: 100
+    - grade: 90
+    - grade: 70
+
+  td:
+    - grade: 80
+    - grade: 70
+    - grade: 100
+    - grade: 90
+    - grade: 70
+
+  final_project:
+    grade: 100
+
+  final_exam:
+    grade: 100
+
+  attendance: [True, False, True, False, True, True]
+
+- name: Rinat
+  mail: r.yes@inno.ru
+
+  tp:
+    - grade: 30
+      cheating: True
+    - grade: 30
+    - grade: 70
+    - grade: 30
+    - grade: 50
+
+  td:
+    - grade: 80
+    - grade: 70
+    - grade: 100
+      cheating: True
+    - grade: 90
+    - grade: 70
+
+  final_project:
+    grade: 100
+
+  final_exam:
+    grade: 100
+    cheating: True
+
+  attendance: [True, False, True, False, True, True]
