@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#/Users/rinatmullahmetov/Documents/ChainOfResponsibility/grader</OriginalElement>
+  <nodes>
+    <node x="357.00000000000006" y="79.0">abc.ABC</node>
+    <node x="0.0" y="395.0">grader.checkers.tp.TpMaxChecher</node>
+    <node x="644.0" y="79.0">grader.student.Student</node>
+    <node x="462.00000000000006" y="79.0">grader.grader.Grader</node>
+    <node x="279.50000000000006" y="158.0">grader.checkers.abstract.Checker</node>
+    <node x="568.0" y="316.0">grader.checkers.attendance.AttendanceChecker</node>
+    <node x="841.0" y="79.0">grader.student.Task</node>
+    <node x="253.00000000000006" y="237.0">grader.checkers.abstract.AbstractChecker</node>
+    <node x="251.00000000000006" y="316.0">grader.checkers.cheating.CheatingChecker</node>
+    <node x="1018.0000000000001" y="79.0">grader.checkers.abstract.Fail</node>
+    <node x="13.0" y="316.0">grader.checkers.tp.TpChecker</node>
+    <node x="697.5000000000002" y="0.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="grader.checkers.abstract.Fail" target="object">
+      <point x="0.0" y="-14.5" />
+      <point x="1123.0" y="49.0" />
+      <point x="760.5000000000002" y="49.0" />
+      <point x="28.0" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.cheating.CheatingChecker" target="grader.checkers.abstract.AbstractChecker">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abc.ABC" target="object">
+      <point x="0.0" y="-14.5" />
+      <point x="399.50000000000006" y="49.0" />
+      <point x="704.5000000000002" y="49.0" />
+      <point x="-28.0" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.abstract.AbstractChecker" target="grader.checkers.abstract.Checker">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.attendance.AttendanceChecker" target="grader.checkers.abstract.AbstractChecker">
+      <point x="0.0" y="-14.5" />
+      <point x="732.5" y="291.0" />
+      <point x="497.1666666666668" y="291.0" />
+      <point x="97.66666666666674" y="14.5" />
+    </edge>
+    <edge source="grader.student.Student" target="object">
+      <point x="1.1368683772161603E-13" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="grader.student.Task" target="object">
+      <point x="0.0" y="-14.5" />
+      <point x="919.5" y="59.0" />
+      <point x="746.5000000000002" y="59.0" />
+      <point x="14.0" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.tp.TpChecker" target="grader.checkers.abstract.AbstractChecker">
+      <point x="0.0" y="-14.5" />
+      <point x="122.0" y="291.0" />
+      <point x="301.83333333333337" y="291.0" />
+      <point x="-97.66666666666669" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.abstract.Checker" target="abc.ABC">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="grader.checkers.tp.TpMaxChecher" target="grader.checkers.tp.TpChecker">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="grader.grader.Grader" target="object">
+      <point x="0.0" y="-14.5" />
+      <point x="543.0" y="59.0" />
+      <point x="718.5000000000002" y="59.0" />
+      <point x="-14.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="614.0" y="156.5" />
+  <SelectedNodes>
+    <node>abc.ABC</node>
+  </SelectedNodes>
+  <Categories />
+</Diagram>
+

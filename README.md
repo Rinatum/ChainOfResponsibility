@@ -23,3 +23,6 @@ python grade.py --students tests/templates/students.yml --grader tests/templates
 python grade.py --students tests/templates/students.yml --grader tests/templates/max_tp_grader.yml
 python grade.py --students tests/templates/students.yml --grader tests/templates/cheating_grader.yml
 ```
+
+### Class Diagram
+Current grader class diagram [here](./grader.uml) 
