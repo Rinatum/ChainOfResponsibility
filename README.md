@@ -1,4 +1,4 @@
-# Implementation of IPOD cource grader using Chain of Responsibility design pattern
+# Implementation of auto-grader tool using Chain of Responsibility design pattern
 
 ## Environment
 Recommend you to run in docker container (You need pre-installed docker client).
