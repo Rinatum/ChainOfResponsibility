@@ -12,7 +12,7 @@ docker build -t grader .
 
 ### Test automatically (by pytest)
 
-```console
+```console¬
 docker run grader:latest
 ```
 
@@ -25,4 +25,4 @@ python grade.py --students tests/templates/students.yml --grader tests/templates
 ```
 
 ### Class Diagram
-Current grader class diagram [here](./grader.uml) 
+Grader class diagram ![alternative text](./grader.png)
