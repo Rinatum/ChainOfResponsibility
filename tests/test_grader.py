@@ -1,3 +1,6 @@
+import os
+import pathlib
+
 import pytest
 
 from grader.parse import parse_students, parse_grader
@@ -6,15 +9,20 @@ from grader.parse import parse_students, parse_grader
 @pytest.mark.parametrize(
     "grader_yaml_path, students_yaml_path, results",
     [
-        ("tests/templates/avg_tp_grader.yml", "tests//templates/students.yml", ["Passed", "Failed by TpChecker"]),
-        ("tests/templates/max_tp_grader.yml", 'tests//templates/students.yml', ["Passed", "Passed"]),
-        ("tests/templates/cheating_grader.yml", "tests//templates/students.yml",["Passed", "Failed by CheatingChecker"]),
+        ("templates/avg_tp_grader.yml", "templates/students.yml",
+         ["Passed", "Failed by TpChecker"]),
+        ("templates/max_tp_grader.yml", 'templates/students.yml',
+         ["Passed", "Passed"]),
+        ("templates/cheating_grader.yml", "templates/students.yml",
+         ["Passed", "Failed by CheatingChecker"]),
     ],
 )
 def test_grader(grader_yaml_path, students_yaml_path, results):
-    students = parse_students(students_yaml_path)
+    current_dir = pathlib.Path(__file__).parent.absolute()
 
-    grader = parse_grader(grader_yaml_path)
+    students = parse_students(os.path.join(current_dir, students_yaml_path))
+
+    grader = parse_grader(os.path.join(current_dir, grader_yaml_path))
 
     grades = []
     for student in students:
