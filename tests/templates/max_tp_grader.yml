@@ -2,6 +2,6 @@
   params:
     thresh: 2
 
-- class: TpMaxChecher
+- class: TpMaxChecker
   params:
     thresh: 56

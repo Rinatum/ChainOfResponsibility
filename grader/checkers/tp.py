@@ -21,7 +21,7 @@ class TpChecker(AbstractChecker):
         return True if mean > self.thresh else False
 
 
-class TpMaxChecher(TpChecker):
+class TpMaxChecker(TpChecker):
     def is_tp_pass(self, tp: List[Task]) -> bool:
         grades = [task.grade for task in tp]
         max_grade = max(grades)
